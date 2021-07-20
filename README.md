@@ -1,7 +1,7 @@
-#   Setup POP OS for web dev
+#   Setup a development environment on  POP OS (Laravel , VueJs)
 
 
-# grub for Dual boot Pop os and win
+## grub for Dual boot Pop os and win
 
 #### partition
 

@@ -1,4 +1,4 @@
-#   setup POP OS for web dev
+#   Setup POP OS for web dev
 
 
 # grub for Dual boot Pop os and win

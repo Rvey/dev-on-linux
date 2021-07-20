@@ -66,14 +66,14 @@ vue --version
 vue create ae > cd ae > npm run serve 
 ```
 Output > 
-`
+```
     App running at:
     - Local: http://localhost:8080/
     - Network: http://192.168.0.106:8080/
 
     Note that the development build is not optimized.
     To create a production build, run npm run build.
-`
+```
 
 ## Laravel 
 
@@ -155,7 +155,7 @@ sudo mysql_secure_installation
 ```
 follow the instruction 
 
-### change the hashed password to password we can acess (nukers hash the first password as you will see when execute the command  so now we need to alter a new one)
+#### change the hashed password to password we can acess (nukers hash the first password as you will see when execute the command  so now we need to alter it with a new one)
 
 ```
 select user, authentication_string, plugin from mysql.user;

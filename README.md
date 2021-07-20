@@ -139,5 +139,52 @@ $ composer
 ```
 
 
+## MySQL
+
+### install 
+
+```
+sudo apt install mysql-server
+
+```
+
+### configuring Mysql
+```
+sudo mysql_secure_installation
+
+```
+follow the instruction 
+
+### change the hashed password to password we can acess (nukers hash the first password as you will see when execute the command  so now we need to alter a new one)
+
+```
+select user, authentication_string, plugin from mysql.user;
+```
+```
+Alter USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'YOUR_PASSWORD123';
+```
+### CONFIRM
+``` 
+FLUSH PRIVILEGES; 
+````
+
+### TEST
+```
+sudo mysql -u root -p
+```
+output > `Enter password : 'YOUR_PASSWORD'` 
+output > ``` Welcom to the mysql ... ```
+
+### Enable `pdo_mysql` extension
+
+```
+sudo apt install php-mysql
+```
+### then restart apache2 : 
+
+```
+sudo systemctl restart apache2
+```
+
 ## Usefull links 
 ### https://github.com/erik1066/pop-os-setup

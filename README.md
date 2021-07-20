@@ -15,7 +15,7 @@
 #### update the system 
 ```sudo apt update && sudo apt upgrade``` 
 #### install grub 
-sudo apt install grub-efi grub2-common grub-customizer
+`sudo apt install grub-efi grub2-common grub-customizer`
 #### install grub bootloader 
 ``` sudo grub-install```
 output > `no error reported`

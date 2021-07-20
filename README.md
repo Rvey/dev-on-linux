@@ -133,5 +133,11 @@ Downloading...
 Composer (version 1.10.5) successfully installed to: /usr/local/bin/composer
 Use it: php /usr/local/bin/composer`
 
-## check ur installation  
-``` $ composer ```
+### check ur installation  
+```
+$ composer 
+```
+
+
+## Usefull links 
+### https://github.com/erik1066/pop-os-setup

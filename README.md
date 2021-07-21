@@ -39,6 +39,8 @@ sudo cp /boot/grub/x86_64-efi/grub.efi /boot/efi/EFI/pop/grubx64.efi
 
 ### NodeJs 
 
+
+
 ####  via official repo
 https://github.com/nodesource/distributions#debinstall
 
@@ -53,9 +55,11 @@ https://github.com/nodejs/snap
 `npm -v`
 
 ### install Vue CLI
+
 ```
-npm install -g @vue/cli
+sudo npm i  @vue/cli -g
 ```
+
 #### verify 
 ```
 vue --version
@@ -78,7 +82,16 @@ Output >
 ## Laravel 
 
 ### PHP 8 
+
+#### Enabling PHP Repository 
+
+```
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+```
 #### installing PHP 8 with Apache
+
+
 ```
 sudo apt update
 
@@ -171,7 +184,9 @@ Alter USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'YOUR_PAS
 ### CONFIRM
 ``` 
 FLUSH PRIVILEGES; 
-````
+```
+
+mysql>`quit`
 
 ### TEST
 ```

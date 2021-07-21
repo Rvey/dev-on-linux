@@ -157,6 +157,11 @@ follow the instruction
 
 #### change the hashed password to password we can acess (nukers hash the first password as you will see when execute the command  so now we need to alter it with a new one)
 
+
+```
+sudo mysql
+```
+
 ```
 select user, authentication_string, plugin from mysql.user;
 ```

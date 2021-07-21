@@ -1,35 +1,4 @@
-#   Setup a development environment on  POP OS (Laravel , VueJs)
-
-
-## grub for Dual boot Pop os and win
-
-#### partition
-
-| file Sys | space | name |
-| :---: | :---: | :---: |
-| fat32 | 800MiB | bootEfi |
-| ext4 | as you please | root(/) |
-| linux-swap | 4GiB | swap |
-
-
-#### update the system 
-```sudo apt update && sudo apt upgrade``` 
-#### install grub 
-`sudo apt install grub-efi grub2-common grub-customizer`
-#### install grub bootloader 
-``` sudo grub-install```
-output > `no error reported`
-
-#### copy the grub efi to the pop folder 
-```
-sudo cp /boot/grub/x86_64-efi/grub.efi /boot/efi/EFI/pop/grubx64.efi
-```
-#### run grub-customiser 
-
-`File` > `change Environment` > OUTPUT_FILE : `/boot/efi/EFI/pop/grub.cfg` > `Apply` > `Save`
-
-
-##### Reboot
+#   Setup a development environment on  POP OS / ubuntu (Laravel , VueJs)
 
 
 # Setup VueJS and Laravel in Popos/ Ubuntu 
@@ -208,3 +177,38 @@ sudo systemctl restart apache2
 
 ## Usefull links 
 ### https://github.com/erik1066/pop-os-setup
+
+
+
+
+## grub for Dual boot Pop os and win
+
+#### partition
+
+| file Sys | space | name |
+| :---: | :---: | :---: |
+| fat32 | 800MiB | bootEfi |
+| ext4 | as you please | root(/) |
+| linux-swap | 4GiB | swap |
+
+
+#### update the system 
+```sudo apt update && sudo apt upgrade``` 
+#### install grub 
+`sudo apt install grub-efi grub2-common grub-customizer`
+#### install grub bootloader 
+``` sudo grub-install```
+output > `no error reported`
+
+#### copy the grub efi to the pop folder 
+```
+sudo cp /boot/grub/x86_64-efi/grub.efi /boot/efi/EFI/pop/grubx64.efi
+```
+#### run grub-customiser 
+
+`File` > `change Environment` > OUTPUT_FILE : `/boot/efi/EFI/pop/grub.cfg` > `Apply` > `Save`
+
+
+##### Reboot
+
+
